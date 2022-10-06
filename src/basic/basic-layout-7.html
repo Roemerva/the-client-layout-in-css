@@ -3,14 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Layout 7</title>
+    <title>Basic Layout 6</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body{
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 6fr 60fr 10fr;
+        grid-template-areas:
+          "header header footer"
+          "nav main footer";
+      }
+
+      header {
+        grid-area: header;
+        background: rgb(0, 213, 255)
+      }
+
+      nav {
+        grid-area: nav;
+        background: rgb(255, 0, 136)
+        
+      }
+
+      main {
+        grid-area: main;
+        background: rgb(255, 247, 0)
+      }
+
+      footer {
+        grid-area: footer;
+        background: rgb(32, 32, 32)
+      }
+    
+
     </style>
   </head>
-  <body id="basic-layout-7">
-    <header><h1>Basic Layout 7</h1></header>
+  <body id="basic-layout-3">
+    <header><h1>Basic Layout 6</h1></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
